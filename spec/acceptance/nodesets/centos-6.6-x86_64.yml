@@ -1,0 +1,11 @@
+HOSTS:
+  centos-66-x64:
+    roles:
+      - master
+    platform: el-6-x86_64
+    box : centos-6.6-x86_64
+    box_url : http://gridadmin01.mgmt.unibe.ch/boxes/centos-6.6-x86_64-virtualbox.box
+    hypervisor : vagrant
+CONFIG:
+  log_level: verbose
+  type: foss
