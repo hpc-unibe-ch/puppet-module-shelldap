@@ -6,6 +6,12 @@ describe 'shelldap class' do
     # Using puppet_apply as a helper
     it 'should work idempotently with no errors' do
       pp = <<-EOS
+      yumrepo { 'ubelix':
+        ensure  => present,
+        baseurl => 'http://gridadmin01.mgmt.ubelix.unibe.ch/mirror/ubelix/6/\$basearch',
+        enabled => 1,
+      }
+
       class { 'shelldap': }
       EOS
 
@@ -16,11 +22,6 @@ describe 'shelldap class' do
 
     describe package('shelldap') do
       it { should be_installed }
-    end
-
-    describe service('shelldap') do
-      it { should be_enabled }
-      it { should be_running }
     end
   end
 end
