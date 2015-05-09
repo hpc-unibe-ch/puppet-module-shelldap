@@ -1,6 +1,6 @@
 # == Class shelldap::params
 #
-# This class is meant to be called from shelldap
+# This class is meant to be called from shelldap.
 # It sets variables according to platform
 #
 class shelldap::params {

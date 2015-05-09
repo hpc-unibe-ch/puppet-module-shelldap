@@ -21,7 +21,7 @@ describe 'shelldap class' do
     end
 
     describe package('shelldap') do
-      it { should be_installed }
+      it { is_expected.to be_installed }
     end
   end
 end

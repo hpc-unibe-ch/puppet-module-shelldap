@@ -1,6 +1,5 @@
 .*.sw?
 .bundle
-.project
 .rspec_system
 .vagrant
 log
