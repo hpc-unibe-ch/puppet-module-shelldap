@@ -23,3 +23,4 @@ class shelldap (
   class { '::shelldap::install': } ->
   Class['::shelldap']
 }
+

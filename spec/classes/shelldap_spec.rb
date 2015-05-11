@@ -19,6 +19,14 @@ describe 'shelldap' do
 
           it { is_expected.to contain_package('shelldap').with_ensure('present') }
         end
+
+        context "shelldap class with user-specified package name" do
+          let(:params) {{
+            :package_name => 'my-shelldap'
+          }}
+
+          it { is_expected.to contain_package('my-shelldap').with_ensure('present') }
+        end
       end
     end
   end

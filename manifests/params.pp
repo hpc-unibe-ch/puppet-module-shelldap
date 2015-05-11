@@ -18,3 +18,4 @@ class shelldap::params {
     }
   }
 }
+

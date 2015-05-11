@@ -2,7 +2,7 @@
   "name": "ubelix-shelldap",
   "version": "0.1.0",
   "author": "Rolli, Michael <michael.rolli@id.unibe.ch>",
-  "summary": "The UBELIX shelldap module installs shelldap from rpm and provides the possibility to manage .shelldap.rc files.",
+  "summary": "The UBELIX shelldap module installs shelldap from rpm and will provide the possibility to manage .shelldap.rc files.",
   "license": "CC-BY-SA-4.0",
   "source": "https://idstash.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
   "project_page": "https://idstash.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
