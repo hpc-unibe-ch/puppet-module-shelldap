@@ -3,6 +3,7 @@
 .rspec_system
 .vagrant
 Gemfile.lock
+junit
 log
 pkg
 spec/fixtures
