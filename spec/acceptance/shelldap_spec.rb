@@ -6,7 +6,18 @@ describe 'shelldap class' do
     # Using puppet_apply as a helper
     it 'should work idempotently with no errors' do
       pp = <<-EOS
-      class { 'shelldap': }
+      include ::epel
+
+      yumrepo { 'ubelix':
+        ensure   => present,
+        baseurl  => 'http://gridadmin01.mgmt.unibe.ch/mirror/ubelix/6/\$basearch',
+        enabled  => 1,
+        gpgcheck => 0,
+      }
+
+      class { 'shelldap':
+        require => [ Class['epel'], Yumrepo['ubelix'] ],
+      }
       EOS
 
       # Run it twice and test for idempotency
@@ -15,12 +26,7 @@ describe 'shelldap class' do
     end
 
     describe package('shelldap') do
-      it { should be_installed }
-    end
-
-    describe service('shelldap') do
-      it { should be_enabled }
-      it { should be_running }
+      it { is_expected.to be_installed }
     end
   end
 end

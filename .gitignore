@@ -1,6 +1,10 @@
 .*.sw?
-.project
-pkg
-spec/fixtures
+.bundle
 .rspec_system
 .vagrant
+Gemfile.lock
+junit
+log
+pkg
+spec/fixtures
+vendor

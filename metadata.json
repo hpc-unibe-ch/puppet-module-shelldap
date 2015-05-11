@@ -2,15 +2,26 @@
   "name": "ubelix-shelldap",
   "version": "0.1.0",
   "author": "Rolli, Michael <michael.rolli@id.unibe.ch>",
-  "summary": "The UBELIX shelldap module installs shelldap from rpm and provides the possibility to manage .shelldap.rc files.",
-  "license": "CC BY-SA 4.0",
+  "summary": "The UBELIX shelldap module installs shelldap from rpm and will provide the possibility to manage .shelldap.rc files.",
+  "license": "CC-BY-SA-4.0",
   "source": "https://idstash.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
   "project_page": "https://idstash.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
   "issues_url": "https://idjira.unibe.ch/projects/UXPM",
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
-      "version_requirement": ">= 1.0.0"
+      "version_requirement": "4.x"
     }
-  ]
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem":"RedHat",
+      "operatingsystemrelease":[ "6", "7" ]
+    },
+    {
+      "operatingsystem":"CentOS",
+      "operatingsystemrelease":[ "6", "7" ]
+    }
+ ]
 }
+
