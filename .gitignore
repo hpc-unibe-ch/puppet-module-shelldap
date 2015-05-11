@@ -2,6 +2,7 @@
 .bundle
 .rspec_system
 .vagrant
+Gemfile.lock
 log
 pkg
 spec/fixtures
