@@ -17,5 +17,7 @@ class shelldap::params {
       fail("${::operatingsystem} not supported")
     }
   }
+
+  $targetdir = '/root'
 }
 

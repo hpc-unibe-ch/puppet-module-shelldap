@@ -14,13 +14,13 @@
 #   Alternative package name if it differs from the module's default value; defaults to "shelldap"
 #
 class shelldap (
-  $package_name = $shelldap::params::package_name,
+  $package_name = $::shelldap::params::package_name,
 ) inherits ::shelldap::params {
 
   # validate parameters here
   validate_string($package_name)
 
-  class { '::shelldap::install': } ->
+  class { '::shelldap::install': }->
   Class['::shelldap']
 }
 
