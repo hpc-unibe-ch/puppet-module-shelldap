@@ -1,0 +1,32 @@
+server: <%= @server %>
+<%- if @binddn -%>
+binddn: <%= @binddn %>
+<%- end -%>
+<%- if @bindpass -%>
+bindpass: <%= @bindpass %>
+<%- end -%>
+<% if @basedn -%>
+basedn: <%= @basedn %>
+<%- end -%>
+<%- if @sasl -%>
+sasl: <%= @sasl %>
+<%- end -%>
+<%- if @tls and @tls == true -%>
+tls: yes
+<%- end -%>
+<%- if @tls_cacert -%>
+tls_cacert: <%= @tls_cacert %>
+<%- end -%>
+<%- if @tls_cert -%>
+tls_cert: <%= @tls_cert %>
+<%- end -%>
+<%- if @tls_key -%>
+tls_key: <%= @tls_key %>
+<%- end -%>
+<%- if @cacheage -%>
+cacheage: <%= @cacheage %>
+<%- end -%>
+<%- if @timeout -%>
+timeout: <%= @timeout %>
+<%- end -%>
+
