@@ -1,4 +1,4 @@
-# == Class: shelldap::rc
+# == Define Resource Type: shelldap::rc
 #
 # This module installs shelldap and optinally deploys .shell.rc files
 # to the home directory of specified user(s).
