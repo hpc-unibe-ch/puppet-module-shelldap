@@ -12,7 +12,6 @@
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
 5. [Limitations - OS compatibility, etc.](#limitations)
 6. [Development - Guide for contributing to the module](#development)
-7. [Copyright Notice](#copyright)
 
 ## Overview
 
@@ -58,12 +57,3 @@ This is where you list OS compatibility, version compatibility, etc.
 
 Since your module is awesome, other users will want to play with it. Let them know what the ground rules for contributing are.
 
-## Copyright Notice
-
-shelldap (c) by IT Services Department, University of Bern
-
-shelldap is licensed under a
-Creative Commons Attribution-ShareAlike 4.0 International License.
-
-You should have received a copy of the license along with this
-work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>. 
