@@ -1,12 +1,11 @@
 {
   "name": "ubelix-shelldap",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Rolli, Michael <michael.rolli@id.unibe.ch>",
   "summary": "The UBELIX shelldap module installs shelldap from rpm and will provide the possibility to manage .shelldap.rc files.",
   "license": "Apache-2.0",
-  "source": "https://idos-code.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
-  "project_page": "https://idos-code.unibe.ch/projects/UBELIX/repos/ubelix-shelldap/browse",
-  "issues_url": "https://idos-issues.unibe.ch/projects/UXPM",
+  "source": "https://github.com/hpc-unibe-ch/puppet-module-shelldap",
+  "issues_url": "https://github.com/hpc-unibe-ch/puppet-module-shelldap/issues",
   "dependencies": [
     {
       "name": "puppetlabs/stdlib",
